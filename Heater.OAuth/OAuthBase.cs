@@ -28,6 +28,8 @@ using System.Web;
 
 namespace Heater.OAuth
 {
+	// there were some bugs in this class from WAY back (like two years ago) 
+	// it's since been retro fitted to support OAuth 1.0a
     public class OAuthBase
     {
         protected const string OAuthVersion = "1.0";
@@ -317,5 +319,6 @@ namespace Heater.OAuth
             return random.Next(123400, 9999999).ToString();
         }
 
+		
     }
 }
